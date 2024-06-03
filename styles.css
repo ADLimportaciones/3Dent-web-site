@@ -15,20 +15,6 @@ input:hover +label{
     background-color: #A7A9AC;
 }
 
-#Encabezado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    background-color: white;
-    height: 7vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    margin-bottom: 200px;
-}
-
 .title{
     font-size: 60px;
     font-weight: bold;
@@ -45,15 +31,14 @@ input:hover +label{
     margin: 1%;
 }
 
-.titulo-Red{
+.titulo-Color{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     font-size: 60px;
     font-weight: bold;
-    color: #C90720;
+    color: #181947;
     width: 100%;
-    padding: 5px;
-    margin: 1%;
+    padding: 5px 100px 5px 0px;
 }
 
 .titulo-Red-2{
@@ -73,9 +58,23 @@ input:hover +label{
     display: inline;
 }
 
+#Encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: white;
+    height: 5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 200px;
+}
+
 #contenedor-logo{
-    height: 6vw;
-    margin: 10px 50px 10px 50px;
+    height: 90%;
+    margin: 10px 50px 10px 130px;
     background-color: transparent;
     color: transparent;
     border-color: transparent;
@@ -92,8 +91,8 @@ input:hover +label{
     justify-content: center;
     align-items: center; 
     border: 2px solid white;
-    height: 100%;
-    margin: 0px 50px 0px 50px;
+    height: 90%;
+    margin: 0px 100px 0px 50px;
 }
 
 .Botones-encabezado {
@@ -124,7 +123,7 @@ input:hover +label{
 }
 
 .Botones-encabezado:hover::after {
-    background-color: #C90720;
+    background-color:#2E3093;
 }
 
 .BotonesCerrar{
@@ -141,23 +140,33 @@ input:hover +label{
     background-color: #A7A9AC;
 }
 
+.botonInteractivo{
+    width: 217px;
+    height: 79px;
+    background-color: #03B6AB;
+    color: white;
+    font-size: 45px;
+    border: 2px solid #2E3093;
+    border-radius: 20px;
+    margin-right: 10%;
+    margin-top: 10%;
+} 
+
+.botonInteractivo:hover{
+    background-color: #A7A9AC;
+}
 
 #Pasarela-de-imagenes{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
+        background-image: url('./assets/Imagen-inicial.jpg');
+        background-size: cover; /* Hace que la imagen cubra todo el fondo */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
         width: 100%;
-        height: 35vw; 
-        margin-top: 6vw;
-        padding-bottom: 1vw;
-}
-
-#Pasarela-de-imagenes img{
-    flex-grow: 1; /* Esto hace que el div .imagen crezca para ocupar todo el espacio disponible */
-    background-size: cover; /* Asegura que la imagen de fondo cubra completamente el div sin perder sus proporciones */
-    background-position: center; /* Centra la imagen de fondo */
-    height: 100%;
-    width: auto;
+        height: 50vw; 
+        margin-top: 5vw;
 }
 
 #Nosotros, #Productos{
