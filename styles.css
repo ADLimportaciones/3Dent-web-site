@@ -19,7 +19,7 @@ input:hover +label{
     color: #2E3093;
     font-size: 40px;
     font-weight: bold;
-    margin: 1%;
+    margin: 2%;
 }
 
 .title-2{
@@ -174,7 +174,7 @@ input:hover +label{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
     padding: 2%;
 }
 
@@ -191,6 +191,58 @@ input:hover +label{
     align-items: center;
     width: 20%;
     margin: 1% 5%;
+}
+
+#quienesSomos{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 1% 2%;
+}
+
+#quien{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin: 1% 2%;
+}
+
+.contenedor{
+    width: 448px;
+    height: 501px;
+    object-fit: cover;
+    object-position: 25% left;
+}
+
+#textNosotros{
+    display: flex;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 1%;
+}
+
+#misionVision{
+    display: flex;
+    width: 70%;
+    align-items: stretch;
+}
+
+.tarjetaMisionVision{   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2%;
+    padding: 1% 2%;
+    border: solid black;
+    border-radius: 50px;
+}
+
+.tarjetaMisionVision p{
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 #Productos-destacados{
@@ -274,7 +326,7 @@ input:hover +label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: white;
     width: 100vw;
     height: auto;
     padding: 10px 10px 10px 10px; 
@@ -299,22 +351,6 @@ input:hover +label{
     align-items: center;
     justify-content: center;
     margin: 5%;
-}
-
-#quienesSomos{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: 1%;
-}
-
-#MisionVision, #compromiso{
-    display: flex;
-    width: 90%;
-    height: auto;
-    justify-content: space-evenly;
-    background-color:#f7f7f6;
-    margin: 1%;
 }
 
 #Valores{
@@ -525,46 +561,4 @@ input:hover +label{
         height: 40vw;
         width: auto;
     }
-}
-
-@media (max-width: 800px){
-    #Encabezado{
-        height: 15vw;
-    }
-    #Pasarela-de-imagenes{
-        margin-top: 15vw;
-    }
-
-    #Productos-destacados,#Contacto{
-        height: auto;
-    }
-
-    #quienesSomos,#compromiso{
-        flex-direction: column;
-    }
-
-    #MisionVision{
-        display: flex;
-        background-color: #f7f7f6;
-    }
-
-    .Producto,.Productos{
-        width: 90vw;
-        height: auto;
-        font-size: 10px;
-        margin: 5px;
-    }
-    .Sección-imagen{
-        height: auto;
-        width: 90%;
-        width: 80%;
-        flex-direction: column;
-    }
-    .next-boton{
-        font-size: 6px;
-        height: 10px;
-        width: 70px;
-        border-radius: 5px;
-    }
-    
 }
