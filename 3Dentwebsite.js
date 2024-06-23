@@ -47,7 +47,7 @@ function pestañaInicio() {
     seccionServicios.style.display = "none";
     seccionNosotros.style.display = "none";
     seccionSedes.style.display = "none";
-    seccionContacto.style.display = "none";
+    seccionContacto.style.display = "flex";
 }
 
 function pestañaNosotros() {
@@ -57,7 +57,7 @@ function pestañaNosotros() {
     seccionServicios.style.display = "none";
     seccionNosotros.style.display = "flex";
     seccionSedes.style.display = "none";
-    seccionContacto.style.display = "none";
+    seccionContacto.style.display = "flex";
 }
 
 function pestañaServicios() {
@@ -67,7 +67,7 @@ function pestañaServicios() {
     seccionServicios.style.display = "flex";
     seccionNosotros.style.display = "none";
     seccionSedes.style.display = "none";
-    seccionContacto.style.display = "none";
+    seccionContacto.style.display = "flex";
 }
 
 function pestañaSedes() {
@@ -77,7 +77,7 @@ function pestañaSedes() {
     seccionServicios.style.display = "none";
     seccionNosotros.style.display = "none";
     seccionSedes.style.display = "flex";
-    seccionContacto.style.display = "none";
+    seccionContacto.style.display = "flex";
 }
 
 function pestañaContacto() {

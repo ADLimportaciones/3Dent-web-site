@@ -221,7 +221,7 @@ input:hover +label{
     height: 320px;
     object-fit: cover;
     border-radius: 30px;
-    margin: 2%;
+    margin: 2% 5% 2% 5%;
 }
 
 #textNosotros{
@@ -311,7 +311,7 @@ input:hover +label{
     background-color: #A7A9AC;
 }
 
-#Nosotros, #Servicios{
+#Nosotros, #Servicios,#Sedes{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,15 +331,26 @@ input:hover +label{
     width: 70%;
 }
 
-.CategoriasServicios{
+.CategoriasServicios, .ListaSedes{
     display: flex;
     align-items: center;
     margin: 3%;
 }
 
-.Texto-Servicios{
+.Texto-Servicios, .Texto-Sedes{
     justify-content: center;
     width: 70%;
+    font-size: 30px;
+}
+
+#Encabezado-Sedes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    width: 70%;
+    text-align: justify;
+    margin: 3%;
 }
 
 #Contacto{
