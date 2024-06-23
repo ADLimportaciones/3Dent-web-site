@@ -245,6 +245,16 @@ input:hover +label{
     text-align: justify;
 }
 
+#Carrusel-Nosotros{
+    display: flex;
+    width: 70vw;
+}
+
+.Carrusel-item{
+    display: flex;
+    height: auto;
+}
+
 #Productos-destacados{
     display: flex;
     flex-direction: column;
@@ -356,11 +366,11 @@ input:hover +label{
 #Valores{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    align-items: flex-end;
+    width: 70%;
     height: auto;
-    justify-content: space-evenly;
-    background-color: white;
-    margin: 1%;
+    text-align: justify;
+    margin: 2%;
 }
 
 .parrafos{
