@@ -213,6 +213,15 @@ input:hover +label{
     height: 501px;
     object-fit: cover;
     object-position: 25% left;
+    border-radius: 30px;
+}
+
+.contenedor2{
+    width: 513px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 2%;
 }
 
 #textNosotros{
@@ -274,6 +283,16 @@ input:hover +label{
     width: 100%;
 }
 
+#info-servicios{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 25px;
+    margin: 4%;
+}
+
 .boton-servicio{
     display: flex;
     justify-content: center;
@@ -292,7 +311,7 @@ input:hover +label{
     background-color: #A7A9AC;
 }
 
-#Nosotros, #Productos{
+#Nosotros, #Servicios{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,35 +320,26 @@ input:hover +label{
     margin-top: 6vw;
 }
 
-#GruposDeProductos-inicio{
+#Encabezado-Servicios{
     display: flex;
-    padding: 1vw;
+    width: 70%;
 }
 
-.tipo-producto-inicio{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: auto;
-    align-items: center;
-    text-align: center;
-    margin: 1vw 3vw;
-}
-
-.tipo-producto-inicio img{
-    height: 60%;
-    max-width: 100%;
-    width: auto;
-}
-
-#Trayectoria{
+#Lista-Servicios{
     display: flex;
     flex-direction: column;
+    width: 70%;
+}
+
+.CategoriasServicios{
+    display: flex;
     align-items: center;
-    background-color: white;
-    width: 100vw;
-    height: auto;
-    border: 10px 0px 10px 0px; 
+    margin: 3%;
+}
+
+.Texto-Servicios{
+    justify-content: center;
+    width: 70%;
 }
 
 #Contacto{
@@ -375,13 +385,17 @@ input:hover +label{
 
 .parrafos{
     color: #9A9B9B;
-    text-align: center;
+    text-align: justify;
 }
 
 .parrafo-color{
     color: #2E3093;
 }
 
+.parrafo-color2{
+    color: #03B6AB;
+    font-size: 30px;
+}
 
 .parrafo{
     display: flex;
