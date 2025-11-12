@@ -63,7 +63,7 @@ input:hover +label{
     justify-content: space-between;
     align-items: center; 
     background-color: white;
-    height: 5vw;
+    height: 6rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -148,12 +148,16 @@ input:hover +label{
     font-size: 45px;
     border: 2px solid #2E3093;
     border-radius: 20px;
-    margin-right: 10%;
-    margin-top: 10%;
+    margin-right: 10rem;
+    margin-top: 10rem;
 } 
 
 .botonInteractivo:hover{
     background-color: #A7A9AC;
+}
+
+#page-content{
+    margin-top: 6rem;
 }
 
 #Pasarela-de-imagenes{
@@ -166,7 +170,6 @@ input:hover +label{
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     width: 100%;
     height: 50vw; 
-    margin-top: 5vw;
 }
 
 #Caracteristicas{
