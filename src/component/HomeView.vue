@@ -37,14 +37,14 @@
         </section>
 
         <section id="Productos-destacados">
-            <h1 class="title-2">Productos detacados</h1>
+            <h1 class="title">Servicios destacados</h1>
             <div id="Servicios-inicio">
-                <router-link to="/Services" class="boton-servicio" id="Radiografia-panoramica">Radiografia panoramica</router-link>
-                <router-link to="/Services" class="boton-servicio" id="Tomografia">Tomografia</router-link>
+                <router-link to="/Services" class="boton-servicio" id="Radiografia-panoramica">Radiografía panoramica</router-link>
+                <router-link to="/Services" class="boton-servicio" id="Tomografia">Tomografía</router-link>
                 <router-link to="/Services" class="boton-servicio" id="Estudio-fotografico">Estudio fotografico</router-link>
-                <router-link to="/Services" class="boton-servicio" id="Escaneo intraoral">Escaneo intraoral</router-link>
+                <router-link to="/Services" class="boton-servicio" id="Escaneo-intraoral">Escaneo intraoral</router-link>
             </div>
-            <router-link to="/Services" class="boton-servicio" id="MAS-PRODUCTOS">MAS PRODUCTOS</router-link>
+            <router-link to="/Services" id="MAS-PRODUCTOS">Mas servicios</router-link>
         </section>
     </section>
 </template>
@@ -54,5 +54,114 @@
 </script>
 
 <style>
+#Pasarela-de-imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url('./assets/Imagen-inicial.png');
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;
+    height: 50vw; 
+    text-align: right;
+}
+#Caracteristicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2%;
+}
 
+#Diferenciadores{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Diferenciador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 1% 5%;
+}
+.Diferenciador > p {
+    text-align: center;
+} 
+
+#Servicios-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 3%;
+    justify-content: center;
+    width: 90%;
+}
+.boton-servicio{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+    padding: 2.5%;
+    margin: 2.5%;
+    font-size: 48px;
+    color: #818C8D;
+    text-decoration: none;
+}
+
+.boton-servicio:hover{
+    background-color: #A7A9AC;
+}
+
+#MAS-PRODUCTOS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03B6AB3B;
+    border: none;
+    border-radius: 30px;
+    width: 350px;
+    height: 90px;
+    font-size: 48px;
+    color: #818C8D;
+    text-decoration: none;
+}
+
+#MAS-PRODUCTOS:hover{
+    background-color: #A7A9AC;
+}
+
+#Radiografia-panoramica{
+    background-image: url('../../public/assets/panoramicCard.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Tomografia{
+    background-image: url('../../public/assets/tomoCard.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#Estudio-fotografico{
+    background-image: url('../../public/assets/photoCard.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#Escaneo-intraoral{
+    background-image: url('../../public/assets/scanCard.svg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
 </style>

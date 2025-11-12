@@ -45,5 +45,26 @@
 </script>
 
 <style>
+#datos-contacto{
+    display: flex;
+    width: 70%;
+}
+
+#datos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2%;
+    text-align: end;
+}
+
+#información-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
 
 </style>
