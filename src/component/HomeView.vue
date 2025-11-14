@@ -78,7 +78,7 @@
 #Diferenciadores{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -163,5 +163,19 @@
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+    .Diferenciador img {
+        width: 100px;
+        height: 100px;
+    }
+    .boton-servicio {
+        height: 200px;
+        font-size: 35px;
+    }
+    #MAS-PRODUCTOS{
+        font-size: 35px;
+    }
 }
 </style>

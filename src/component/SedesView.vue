@@ -12,7 +12,7 @@
                     Carrera 14 # 81 - 19 <br>
                     Oficina 601 <br>
                     6014660027 <br>
-                    3195165288 <br>
+                    +57 319 5165288 <br>
                     3dent82@gmail.com
                 </p>
             </div>
@@ -25,7 +25,7 @@
                     Carrera 15 # 90 - 20 <br>
                     Local S114 <br>
                     6016565407 <br>
-                    3197236527 <br>
+                    +57 319 7236527 <br>
                     3dent90@gmail.com
                 </p>
             </div>
@@ -40,7 +40,7 @@
                     Calle 125 # 21A - 18 <br>
                     Oficina 201 <br>
                     6013230766 <br>
-                    3195198888 <br>
+                    +57 319 5198888 <br>
                     3dentrx@gmail.com
                 </p>
             </div>
@@ -53,5 +53,9 @@
 </script>
 
 <style>
-
+    @media (max-width: 600px) {
+        #Sedes >div:nth-child(3){
+            flex-direction: column-reverse;
+        }
+    }
 </style>

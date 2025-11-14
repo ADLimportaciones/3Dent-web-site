@@ -45,5 +45,62 @@
 </script>
 
 <style>
+    #textNosotros{
+        display: flex;
+        font-size: 25px;
+        text-align: justify;
+        line-height: 1.6;
+        margin: 1%;
+    }
 
+    #misionVision{
+        display: flex;
+        width: 70%;
+        align-items: stretch;
+    }
+
+    .tarjetaMisionVision{   
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2%;
+        padding: 1% 2%;
+        border: solid #2E3093;
+        background-color: #9FCACD1A;
+        border-radius: 50px;
+    }
+
+    .tarjetaMisionVision p{
+        font-size: 24px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    #Carrusel-Nosotros{
+        display: flex;
+        width: 70vw;
+        overflow-x: auto    ;
+    }
+
+    Carrusel-item {
+        flex: 0 0 auto;
+        scroll-snap-align: center; 
+    }
+
+    .Carrusel-item img {
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    @media (max-width: 1000px) {
+        #quienesSomos{
+            display: flex;
+            flex-direction: column;
+        }
+        #misionVision{
+            width: 90%;
+        }
+    }
 </style>

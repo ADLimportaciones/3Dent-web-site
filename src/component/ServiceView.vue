@@ -79,5 +79,58 @@
 </script>
 
 <style>
+    #Encabezado-Servicios{
+        display: flex;
+        width: 70%;
+    }
 
+    #Lista-Servicios{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .contenedor{
+        width: 448px;
+        height: 501px;
+        object-fit: cover;
+        object-position: 25% left;
+        border-radius: 30px;
+    }
+
+    .contenedor2{
+        width: 513px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin: 2% 5% 2% 5%;
+    }
+
+    @media (max-width: 1000px) {
+        .contenedor{
+        width: 300px;
+        height: auto;
+        }
+        .contenedor2{
+            width: 350px;
+            height: auto;
+        }
+        #Encabezado-Servicios, #Lista-Servicios{
+            width: 90%;
+        }
+    }
+    @media (max-width: 1000px) {
+        .contenedor{
+        width: 300px;
+        height: auto;
+        }
+        .contenedor2{
+            width: 350px;
+            height: auto;
+        }
+        #Encabezado-Servicios, #Lista-Servicios, .CategoriasServicios{
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+    }
 </style>

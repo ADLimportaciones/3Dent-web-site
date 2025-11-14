@@ -58,74 +58,6 @@ input:hover +label{
     margin: 1%;
 }
 
-#Encabezado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    background-color: white;
-    height: 6rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    margin-bottom: 200px;
-}
-
-#contenedor-logo{
-    height: 90%;
-    margin: 10px 50px 10px 130px;
-    background-color: transparent;
-    color: transparent;
-    border-color: transparent;
-    border-radius: 30%;
-
-}
-
-#contenedor-logo:hover{
-    background-color: #A7A9AC;
-}
-
-.contenedor-botones{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    border: 2px solid white;
-    height: 90%;
-    margin: 0px 100px 0px 50px;
-}
-
-.Botones-encabezado {
-    font-size: 20px;
-    width: 130px;
-    height: 60%;
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid white;
-    color: black;
-    padding: 0px 15px;
-    margin: 0px 5px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.Botones-encabezado::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    width: 80%;
-    height: 3px;
-    background-color: transparent;
-    transition: background-color 0.3s;
-    transform: translateX(-50%); /* Centra el subrayado */
-}
-
-.Botones-encabezado:hover::after {
-    background-color:#2E3093;
-}
-
 .BotonesCerrar{
     width: 150px;
     height: 50px;
@@ -149,7 +81,7 @@ input:hover +label{
     border: none;
     border-radius: 20px;
     margin-right: 10rem;
-    margin-top: 10rem;
+    margin-top: 3rem;
 } 
 
 .botonInteractivo:hover{
@@ -173,62 +105,6 @@ input:hover +label{
     align-items: center;
     width: 45%;
     margin: 1% 2%;
-}
-
-.contenedor{
-    width: 448px;
-    height: 501px;
-    object-fit: cover;
-    object-position: 25% left;
-    border-radius: 30px;
-}
-
-.contenedor2{
-    width: 513px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 30px;
-    margin: 2% 5% 2% 5%;
-}
-
-#textNosotros{
-    display: flex;
-    font-size: 25px;
-    text-align: justify;
-    line-height: 1.6;
-    margin: 1%;
-}
-
-#misionVision{
-    display: flex;
-    width: 70%;
-    align-items: stretch;
-}
-
-.tarjetaMisionVision{   
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 2%;
-    padding: 1% 2%;
-    border: solid black;
-    border-radius: 50px;
-}
-
-.tarjetaMisionVision p{
-    font-size: 24px;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-#Carrusel-Nosotros{
-    display: flex;
-    width: 70vw;
-}
-
-.Carrusel-item{
-    display: flex;
-    height: auto;
 }
 
 #Productos-destacados{
@@ -258,17 +134,6 @@ input:hover +label{
     margin-top: 6vw;
 }
 
-#Encabezado-Servicios{
-    display: flex;
-    width: 70%;
-}
-
-#Lista-Servicios{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
 .CategoriasServicios, .ListaSedes{
     display: flex;
     align-items: center;
@@ -289,16 +154,6 @@ input:hover +label{
     width: 70%;
     text-align: justify;
     margin: 3%;
-}
-
-#Contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    width: 100vw;
-    height: auto;
-    padding: 10px 10px 10px 10px; 
 }
 
 #Valores{
@@ -483,35 +338,43 @@ input:hover +label{
     margin: 0px 5vw 0px 5vw;
 }
 
-
 @media (max-width: 1000px) {
-    #Encabezado{
-        height: 12vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-size: 6px;
+    .title, .title-2, .titulo-Color{
+    font-size: 35px;
     }
-
-    #Pasarela-de-imagenes{
-        margin-top: 12vw;
+    .botonInteractivo{
+        margin-top: 2rem;
     }
+    .Subtitle-color{
+        font-size: 25px;
+    }
+    .parrafos, .parrafo-color2, .parrafo-color{
+        font-size: 18px;
+    }
+}
 
-    .Botones-encabezado{
+@media (max-width: 600px) {
+    .title, .title-2, .titulo-Color{
+    font-size: 20px;
+    padding-right: 2%;
+    }
+    .botonInteractivo{
+        margin-top: 2rem;
+    }
+    .Subtitle-color{
         font-size: 15px;
-        width: 80px;
-        height: 20px;
-        border-radius: 20px;
     }
-    
-
-    #Pasarela-de-imagenes,#Trayectoria,#Productos-destacados,#Contacto{
-        margin-top: 8vw;
-        height: auto;
+    .parrafos, .parrafo-color2{
+        font-size: 15px;
+        
     }
-    .imagen,.imagenEstatica{
-        height: 40vw;
-        width: auto;
+    .botonInteractivo{
+        margin-top: 0.5rem;
+        margin-right: 1.5rem;
+        height: 60px;
+        width: 200px;
+    }
+    .CategoriasServicios, .ListaSedes{
+        flex-direction: column;
     }
 }
