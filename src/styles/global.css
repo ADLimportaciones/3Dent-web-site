@@ -357,6 +357,8 @@ input:hover +label{
     .title, .title-2, .titulo-Color{
     font-size: 20px;
     padding-right: 2%;
+    width: 100%;
+    text-align: center;
     }
     .botonInteractivo{
         margin-top: 2rem;

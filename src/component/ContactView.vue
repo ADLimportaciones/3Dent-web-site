@@ -128,13 +128,27 @@
 @media (max-width: 600px){
     #datos-contacto{
         width: 100%;
+        flex-direction: column;
+    }
+    #datos{
+        width: 85%;
+    }
+    #datos > div input {
+        width: 80vw;
     }
     .sendBoton{
         width: 130px;
-        height: 70px;
+        height: 60px;
+        font-size: 30px;
     }
     #socialMedia a {
         margin: 0 1%;
+    }
+    #información-contacto {
+        margin: 0 0 25% 0;
+    }
+    #información-contacto p {
+        margin: 0.5rem 0;
     }
 }
 </style>

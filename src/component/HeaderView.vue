@@ -3,7 +3,7 @@
         <div id="toggle">
             <div class="menu-toggle" @click="toggleMenu">☰</div>
          </div>
-        <router-link to="/">
+        <router-link to="/" @click="closeMenu()">
         <button  id="contenedor-logo">
             <img src="/assets/3dent.png" alt="3Dent" height="65rem">
         </button>
@@ -143,7 +143,7 @@ export default {
     }
     .nav-links {
         position: absolute;
-        top: 75px;
+        top: 68px;
         background: white;
         flex-direction: column;
         align-items: center;

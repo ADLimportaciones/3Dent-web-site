@@ -166,9 +166,12 @@
 }
 
 @media (max-width: 600px) {
+    .Diferenciador{
+        width: 90%;
+    }
     .Diferenciador img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     .boton-servicio {
         height: 200px;

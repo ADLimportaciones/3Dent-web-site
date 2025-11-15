@@ -103,4 +103,21 @@
             width: 90%;
         }
     }
+    @media (max-width: 600px){
+        #quienesSomos{
+            width: 90% !important;
+        }
+        #textNosotros{
+            font-size: 15px;
+        }
+        #misionVision{
+            flex-direction: column;
+        }
+        .tarjetaMisionVision p {
+            font-size: 15px;
+        }
+        #Valores{
+            margin-top: 5% !important;
+        }
+    }
 </style>
