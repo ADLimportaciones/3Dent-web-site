@@ -3,13 +3,14 @@ import ViewHome from "../component/HomeView.vue"
 import ViewUs from "../component/UsView.vue"
 import ViewServices from "../component/ServiceView.vue"
 import ViewSedes from "../component/SedesView.vue"
+import EmptyView from '@/component/EmptyView.vue'
 
 const routes = [
   {path: '/', name: 'Home', component: ViewHome},
   {path: '/us', name: 'Us', component: ViewUs},
   {path: '/Services', name: 'Services', component: ViewServices},
   {path: '/Sedes', name: 'Sedes', component: ViewSedes},
-  { path: '/contact', name: 'Contact' }
+  {path: '/contact', name: 'Contact', component: EmptyView }
   
 ]
 
