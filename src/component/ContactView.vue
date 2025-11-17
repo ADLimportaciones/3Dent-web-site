@@ -2,18 +2,19 @@
     <section id="Contacto">
         <h1 class="title">Contacto</h1>
         <div  id="datos-contacto">
-            <form action="https://formspree.io/f/xnnqpono" method="POST" id="datos">
-            <div>
+            <form @submit.prevent="enviar">
+            <div id="datos">
                 <h1 class="parrafos">Nombre*</h1>
-                <input type="text" id="nombre" name="nombre" class="imput-text"></input>
+                 <input v-model="nombre" type="text" class="imput-text" required />
 
                 <h1 class="parrafos">Email*</h1>
-                <input type="text" id="email" name="email" class="imput-text"></input>
+                <input v-model="correo" type="email" class="imput-text" required />
                 <h1 class="parrafos">Mensaje*</h1>
-                <input type="text" id="mensaje" name="mensaje" class="imput-text"></input>
+                <textarea v-model="mensaje" class="imput-text" required></textarea>
             </div>
             <button class="sendBoton" type="submit">Enviar</button>
             </form>
+
             <div id="información-contacto">
                 <p class="parrafos">Si tienes alguna pregunta o consulta, no dudes en ponerte en contacto con nosotros.</p>
                 <p class="parrafo-color">+57 319 7236527<br>
@@ -37,10 +38,43 @@
 </template>
 
 <script>
+import { enviarCorreo } from "../Functions/sendEmail.js";
 
+export default {
+  name: "contact",
+
+  data() {
+    return {
+      nombre: "",
+      correo: "",
+      mensaje: ""
+    };
+  },
+   methods: {
+    async enviar() {
+      try {
+        const resp = await enviarCorreo({
+          nombre: this.nombre,
+          correo: this.correo,
+          mensaje: this.mensaje
+        });
+
+        console.log("Correo enviado:", resp);
+        this.nombre = "";
+        this.correo = "";
+        this.mensaje = "";
+
+        alert("Mensaje enviado correctamente");
+      } catch (err) {
+        console.error(err);
+        alert("Hubo un error enviando el mensaje");
+      }
+    }
+  }
+};
 </script>
 
-<style>
+<style scoped>
 #Contacto{
     display: flex;
     flex-direction: column;
@@ -59,7 +93,7 @@
 #datos{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: auto;
     margin: 2%;
     align-items: flex-end;
 }
@@ -67,12 +101,15 @@
 #datos h1{
     text-align: end;
 }
-#datos > div input{
-    width: 32vw;
+.imput-text, textarea{
+    width: 40vw;
+    height: 50px;
     border: 2px solid #2E3093;
+    border-radius: 20px;
+    padding: 10px;
 }
 
-#datos > div input:last-child{
+.imput-text:last-child{
     height: 150px;
 }
 
@@ -125,7 +162,7 @@
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
     #datos-contacto{
         width: 100%;
         flex-direction: column;
@@ -133,7 +170,7 @@
     #datos{
         width: 85%;
     }
-    #datos > div input {
+    .imput-text {
         width: 80vw;
     }
     .sendBoton{

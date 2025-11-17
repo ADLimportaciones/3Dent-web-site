@@ -325,13 +325,6 @@ input:hover +label{
     margin: 1vw;
 }
 
-.imput-text{
-    width: 100%;
-    height: 50px;
-    border-radius: 20px;
-    border-color: black;
-}
-
 .logo{
     max-width: 100%;
     height: 10vw;

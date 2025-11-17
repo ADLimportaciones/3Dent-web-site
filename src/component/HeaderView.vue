@@ -1,5 +1,5 @@
 <template>
-    <section id="Encabezado">
+    <section id="encabezado">
         <div id="toggle">
             <div class="menu-toggle" @click="toggleMenu">☰</div>
          </div>
@@ -33,61 +33,57 @@ export default {
 </script>
 
 <style>
-#toggle{
+#toggle {
     display: none;
 }
-#Encabezado{
+
+#encabezado {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     background-color: white;
-    height: 6rem;
+    height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    margin-bottom: 200px;
+    padding-top: 10px;
+    border-bottom: 5px solid #46B5BE;
 }
 
-#contenedor-logo{
-    height: 90%;
-    margin: 10px 50px 10px 130px;
+#contenedor-logo {
+    height: 95px;
     background-color: transparent;
-    color: transparent;
-    border-color: transparent;
-    border-radius: 30%;
-
+    border: none;
+    margin-left: 5vw;
+}
+#contenedor-logo img {
+    height: 100%;
 }
 
-#contenedor-logo:hover{
-    background-color: #A7A9AC;
-}
-
-.contenedor-botones{
+.contenedor-botones {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    border: 2px solid transparent;
+    align-items: center;
+    border: 2px solid white;
     height: 90%;
-    margin: 0px 100px 0px 50px;
+    margin: 0 70px 0 50px;
 }
 
 .Botones-encabezado {
     font-size: 20px;
     width: 130px;
-    height: 60%;
-    border-radius: 20px;
+    height: auto;
     background: transparent;
-    border: 2px solid transparent;
+    border: none;
     color: black;
-    padding: 0px 15px;
-    margin: 0px 5px;
+    padding: 0 15px;
+    margin: 0 5px;
     position: relative;
     cursor: pointer;
-    overflow: hidden;
 }
-
 .Botones-encabezado::after {
     content: '';
     position: absolute;
@@ -97,53 +93,38 @@ export default {
     height: 3px;
     background-color: transparent;
     transition: background-color 0.3s;
-    transform: translateX(-50%); /* Centra el subrayado */
+    transform: translateX(-50%);
 }
-
 .Botones-encabezado:hover::after {
-    background-color:#2E3093;
+    border-bottom: 2px #2E3093 ;
+    background-color: #2E3093;
 }
-@media (max-width: 1030px) {
-    #Encabezado{
-        height: 12vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        font-size: 6px;
+
+@media (max-width: 1000px) {
+    .Botones-encabezado{
+        padding: 0;
+        margin: 0 10px;
+        width: auto;
     }
-    #contenedor-logo{
-        margin: 0 1% 0 20% !important;
+    #contenedor-logo {
+        margin: 5px;
     }
-    .contenedor-botones{
-        margin: 0 !important;
-    }
-    .Botones-encabezado {
-        width: 100px !important;
-        padding: 0 !important;
-        margin: 0 !important;
+    .contenedor-botones {
+        margin: 0 5px;
     }
 }
 
-@media (max-width: 600px) {
-    #Encabezado{
-        height: 16vw;
+@media (max-width: 650px) {
+    #toggle {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        font-size: 6px;
-    }
-    #toggle{
-        display: flex;
-        width: auto;
         height: 50px;
         font-size: 50px;
-        margin: 0 5%;
+        margin-left: 5%;
     }
+
     .nav-links {
         position: absolute;
-        top: 68px;
+        top: 12vh;
         background: white;
         flex-direction: column;
         align-items: center;
@@ -151,21 +132,15 @@ export default {
         display: none;
         width: 100%;
         height: auto;
-        z-index: 9999;
         padding-bottom: 1rem;
     }
 
     .nav-links.active {
         display: flex;
     }
-
-    #contenedor-logo{
-        height: fit-content;
-        margin: 0 50px 0 0% !important;
-    }
-    .contenedor-botones{
-        margin: 0 !important;
-        flex-direction: column;
+    #contenedor-logo {
+        margin-right: 25px;
     }
 }
+
 </style>
