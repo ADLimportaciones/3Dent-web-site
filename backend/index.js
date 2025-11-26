@@ -44,5 +44,5 @@ app.post("/send-email", async (req, res) => {
 })
 
 app.listen(3002, () => {
-    console.log("Servidor corriendo en puerto 3000")
+    console.log("Servidor corriendo en puerto 3002")
 })
