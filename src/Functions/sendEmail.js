@@ -1,6 +1,6 @@
 export async function enviarCorreo(data) {
 
-    const response = await fetch("http://localhost:3000/send-email", {
+    const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
