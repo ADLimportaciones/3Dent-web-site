@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-image: url('./assets/Imagen-inicial.png');
+    background-image: url('/assets/Imagen-inicial.png');
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
